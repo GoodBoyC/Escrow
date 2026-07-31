@@ -37,8 +37,8 @@ export interface Transaction {
   updatedAt: string;
 }
 
-const JSONBIN_API_KEY = ''; // User will provide this
-const JSONBIN_BIN_ID = '';   // User will provide this
+const $2a$10$RnrCU7ULz1eBnJ5BtoFvj.uy5VToxEI6YaPUp2WCagJgPLvmM4Pe6 = ''; // User will provide this
+const 69e9dbc636566621a8e21c82 = '';   // User will provide this
 
 export const storageService = {
   async saveTransaction(transaction: Transaction): Promise<void> {
