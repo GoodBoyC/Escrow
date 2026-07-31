@@ -263,28 +263,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Security */}
-        <section className="border-y border-zinc-800 bg-zinc-950/50">
-          <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-2xl font-semibold">Security First</h3>
-                <p className="mt-4 text-zinc-400">End-to-end encryption, secure card verification, and funds held until confirmation.</p>
-                <ul className="mt-6 space-y-3 text-sm text-zinc-300">
-                  <li className="flex gap-3"><span className="text-emerald-400">✓</span> SSL encrypted transactions</li>
-                  <li className="flex gap-3"><span className="text-emerald-400">✓</span> $0.10 temporary authorization for verification</li>
-                  <li className="flex gap-3"><span className="text-emerald-400">✓</span> Card data never stored in full</li>
-                </ul>
-              </div>
-              <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
-                <div className="text-xs uppercase tracking-wide text-zinc-500">Accepted Cards</div>
-                <div className="mt-3 flex gap-3 text-zinc-400">Visa • Mastercard • American Express • Discover</div>
-                <div className="mt-6 h-px bg-zinc-800" />
-                <div className="mt-6 text-sm text-zinc-400">PayPal — coming soon</div>
-              </div>
-            </div>
-          </div>
-        </section>
+       
 
         {/* FAQ */}
         <section className="mx-auto max-w-3xl px-6 py-20 lg:px-8">
