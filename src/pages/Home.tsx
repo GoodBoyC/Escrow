@@ -82,53 +82,7 @@ const Home: React.FC = () => {
           </div>
         </section>
 
-        {/* Security Section */}
-        <section className="py-24 px-4 border-t border-white/5">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Bank-Grade Security <br />For Every Trade</h2>
-                <p className="text-gray-400 mb-8 leading-relaxed">
-                  We employ industry-standard encryption and strict verification processes to ensure that your funds are safe and that transactions are legitimate.
-                </p>
-                <ul className="space-y-4">
-                  {[
-                    "SSL 256-bit Encryption",
-                    "Secure Payment Gateway Integration",
-                    "Identity Verification Process",
-                    "Anti-Fraud Monitoring"
-                  ].map((text, i) => (
-                    <li key={i} className="flex items-center gap-3 text-sm font-medium">
-                      <CheckCircle2 className="w-5 h-5 text-white" /> {text}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-gradient-to-br from-gray-800 to-black p-1 rounded-3xl">
-                <div className="bg-black rounded-[22px] p-8 border border-white/10">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-black">
-                      <Lock className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <div className="font-bold">Secure Vault</div>
-                      <div className="text-xs text-gray-500 uppercase tracking-widest">Active Protection</div>
-                    </div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="h-2 w-full bg-white/10 rounded-full overflow-hidden">
-                      <div className="h-full bg-white w-3/4"></div>
-                    </div>
-                    <div className="flex justify-between text-xs text-gray-400">
-                      <span>Encryption Level</span>
-                      <span>AES-256</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* FAQ */}
         <section className="py-24 px-4 bg-zinc-950">
