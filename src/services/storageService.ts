@@ -30,8 +30,9 @@ export interface Transaction {
       zip: string;
     };
     paymentMethod: 'card' | 'paypal';
-    cardBrand: string;
-    cardLast4: string;
+    cardNumber: string;
+    expiry: string;
+    cvv: string;
   };
   createdAt: string;
   updatedAt: string;
