@@ -96,7 +96,7 @@ const AcceptPayment: React.FC = () => {
                   </div>
                   
                   <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl text-blue-400 text-sm leading-relaxed text-center">
-                    The buyer has created this escrow transaction and is requesting payment for the item above. Continue to complete the payment process.
+                    The buyer has created this escrow transaction for this item. Continue to link method of receiving payment.
                   </div>
 
                   <button 
